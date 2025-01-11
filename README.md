@@ -49,9 +49,9 @@ Query results for each table are saved as .csv files.
 1. Data Cleaning and Transformation
 - Perform data cleaning and transformations to align with the Fact and Dimension table designs.
 - Example tasks:
-- 1. Handling missing values.
-- 2. Converting data types.
-- 3. Standardizing formats (e.g., currency, date).
+  1. Handling missing values.
+  2. Converting data types.
+  3. Standardizing formats (e.g., currency, date).
      
 2. Implementation
 - Use PySpark for efficient processing of large datasets.
@@ -59,12 +59,9 @@ Query results for each table are saved as .csv files.
 ## Load
 1. Create the Data Warehouse Schema
 - Design and implement the database schema in PostgreSQL based on the Fact and Dimension table structure.
-- Use a DDL script (<datawarehouse_ddl_<name>.sql>) to create the database and tables.
 2. Load Data into Tables
-
 - Load the cleaned and transformed data from PySpark into the respective Fact and Dimension tables in the PostgreSQL database.
 3. Tools
-
 - Use sqlalchemy connectors to interact with PostgreSQL programmatically.
 
 ## Conclusion
