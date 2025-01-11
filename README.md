@@ -37,11 +37,7 @@ Extract the required data from the BigQuery database based on the Fact and Dimen
 2. Save to CSV
 Query results for each table are saved as .csv files.
 
-3. SQL Queries
-
-- Store SQL queries in a dedicated file (<extraction_queries.sql>).
-- Annotate each query to describe its purpose (e.g., extracting customer data, sales data, etc.).
-4. Load into PySpark
+3. Load into PySpark
 
 - Import the .csv files into PySpark DataFrames for further processing.
 
@@ -57,12 +53,13 @@ Query results for each table are saved as .csv files.
 - Use PySpark for efficient processing of large datasets.
 
 ## Load
-1. Create the Data Warehouse Schema
-- Design and implement the database schema in PostgreSQL based on the Fact and Dimension table structure.
-2. Load Data into Tables
+
+1. Load Data into Tables
 - Load the cleaned and transformed data from PySpark into the respective Fact and Dimension tables in the PostgreSQL database.
-3. Tools
+2. Tools
 - Use sqlalchemy connectors to interact with PostgreSQL programmatically.
+3. Create the Data Warehouse Schema
+- Design and implement the database schema in PostgreSQL based on the Fact and Dimension table structure.
 
 ## Conclusion
 This project demonstrates a complete ETL pipeline, from data extraction to warehouse implementation, for The Look e-commerce platform. The resulting data warehouse enables efficient sales analysis and business decision-making. Future enhancements may include automating the pipeline and adding more data sources for a holistic business view.
